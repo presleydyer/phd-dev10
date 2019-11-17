@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                    <h2>Emporia Street Kitchen</h2>
+            </header>
+            <nav>
+                <hr />
+                <p><a href="index.html">Home</a> <a href="">Menu</a> <a href="contact.html">Contact Us</a></p>
+                <hr />
+            </nav>
+            <section>
+                <form action="Submit.html" method="POST">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name"/>
+                    <br />
+                    <br />
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" name="email"/>
+                    <br />
+                    <br />
+                    <label for="phone">Phone: </label>
+                    <input type="text" id="phone" name="phone"/>
+                    <br />
+                    <br />
+                    <label for="reason">Reason for Inquiry: </label>
+                    <select id="reason" name="reason">
+                        <option value="catering" selected>Catering</option>
+                        <option value="private">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br />
+                    <br />
+                    <label for="info">Additional Information: </label>
+                    <textarea id="info" name="info">
+                    </textarea>
+                    <br />
+                    <br />
+                    <label for="visit">Have you been to the restaurant? </label>
+                    <input type="radio" id="choice1" name="visit" value="no" checked/>
+                    <label for="choice1">No</label>
+                    <input type="radio" id="choice2" name="visit" value="yes"/>
+                    <label for="choice2">Yes</label>
+                    <br />
+                    <br />
+                    <label for="contact">Best days to contact you: </label>
+                    <input type="checkbox" id="monday" name="contact" value="monday"/>
+                    <label for="monday">M</label>
+                    <input type="checkbox" id="tuesday" name="contact" value="tuesday"/>
+                    <label for="tuesday">T</label>
+                    <input type="checkbox" id="wednesday" name="contact" value="wednesday"/>
+                    <label for="wednesday">W</label>
+                    <input type="checkbox" id="thursday" name="contact" value="thursday"/>
+                    <label for="thursday">Th</label>
+                    <input type="checkbox" id="friday" name="contact" value="friday"/>
+                    <label for="friday">F</label>
+                    <br />
+                    <br />
+                    <input type="submit" name="submit" value="Send Request"/>
+                </form>
+            </section>
+            <footer>
+                <hr />
+                224 N. Emporia St., Wichita, Kansas 67202
+                <br />
+                316-555-8646
+            </footer>
+        </main>
+    </body>
+</html>
