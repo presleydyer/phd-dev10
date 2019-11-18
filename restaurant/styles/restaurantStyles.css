@@ -1,0 +1,66 @@
+/*
+Creator: Presley Dyer
+Date created: 11/16/2019
+Date last modified:
+*/
+
+header, footer {
+    background-color: #123c69;
+    color: #fef9ff;
+    height: 100%;
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+}
+
+footer {
+    border-top: 2px solid #111;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    background-color: #edc7b7;
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    margin-top: 0px;
+}
+
+
+nav a {
+    color: #111;
+    padding: 8px;
+    text-decoration: none;
+    margin: 10px;
+    width: 100px;
+    float: left;
+}
+
+nav a:visited {
+    color: #6f6f72;
+}
+
+nav a:hover {
+    color: #111;
+    font-weight: bold;   
+}
+
+nav a:active {
+    text-decoration: none;
+}
+
+body {
+    background-color: #eee2dc;
+}
+
+.clear-float {
+    clear: both;
+}
+
+#description {
+    text-align: justify;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 10px;
+}

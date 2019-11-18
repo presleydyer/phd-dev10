@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Home Page</title>
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
@@ -9,16 +15,15 @@
                 <h1>Emporia Street Kitchen</h1>
             </header>
             <nav>
-                <hr />
                 <p><a href="">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a></p>
-                <hr />
+                <div class="clear-float"></div>
             </nav>
             <section>
                 <article id="image">
-                    <img src="images/restaurant-front.jpg" alt="Emporia Street Kitchen Storefront"/>
+                    <img src="images/restaurant-front.jpg" alt="Emporia Street Kitchen Storefront" style="display: block; margin-left: auto; margin-right: auto; padding-top: 10px;"/>
                 </article>
                 <article id="description">
-                    <p>
+                    <p>Restaurant Description<br />
                         Established in 2019 in Wichita, Kansas, the home of its founder, Emporia Street Kitchen has strived to server the best quality 
                         American staple foods that satisfy your palette. We've done our research and have created a menu that will surely offer something for everyone. 
                         From our delicious burgers to our crisp and fresh salads, we here at Emporia Street Kitchen have something for whatever you're craving! 
@@ -27,11 +32,16 @@
                 </article>
             </section>
             <footer>
-                <hr />
-                224 N. Emporia St., Wichita, Kansas 67202
-                <br />
-                316-555-8646
+                <p>
+                    224 N. Emporia St., Wichita, Kansas 67202
+                    <br />
+                    316-555-8646
+                </p>
             </footer>
         </main>
+        <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
