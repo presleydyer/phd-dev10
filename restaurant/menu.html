@@ -4,27 +4,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Menu</title>
+        <noscript>
+            <div class="noscriptmsg" style="background-color: red; color: white;">
+            You currently have Javascript disabled. This site is best viewed with Javascript enbled.
+            </div>
+        </noscript>
         <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css"/>
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         <style>
-            #menu {
+            .menu-items {
                 background-color: #ac3b61;
                 color: rgb(233, 227, 227);
                 text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%;
-            }
-
-            th {
-                font-size: 1.2em;
-            }
-
-            #menu td {
-                text-align: center;
-                vertical-align: top;
             }
 
             #drinks {
@@ -43,109 +36,102 @@
         </style>
     </head>
     <body>
-        <main>
+        <div class="container-fluid">
             <header>
                 <h1>Emporia Street Kitchen</h1>
             </header>
             <nav>
-                <p><a href="index.html">Home</a> <a href="">Menu</a> <a href="contact.html">Contact Us</a></p>
-                <div class="clear-float"></div>
+                <a class="home" href="index.html" style="background: transparent;"><img src="images/home.png" alt="Home Page"/></a>
+                <a class="btn badge-pill" href="menu.html">Menu</a>
+                <a class="btn badge-pill" href="contact.html">Contact Us</a>
             </nav>
-            <section>
-                <article>
-                    <br />
-                    <table id="menu">
-                        <tr>
-                            <th>Burger and Fries</th>
-                            <th>Hot Dog and Chips</th>
-                            <th>Italian Sausage and Peppers</th>
-                        </tr>
-                        <tbody>
-                            <tr>
-                                <td>An American Classic!<br />
-                                    Your choice - with or without cheese<br />
-                                    Pickle, onion, tomato, and lettuce<br />
-                                    Served with our famous thick cut<br />
-                                    french Fries
-                                    <br />
-                                    $7.95
-                                </td>
-                                <td>A Summer Classic!<br />
-                                    Your choice - white or wheat bun<br />
-                                    Relish, mustard, and ketchup<br />
-                                    Served with our house-made chips<br />
-                                    $7.95
-                                </td>
-                                <td>
-                                    An All-Time Favorite!<br />
-                                    Your choice - mild or spicy Cole Slaw<br />
-                                    Served with garlic mashers<br />
-                                    $10.95
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Tenderloin Sandwich and Chips</th>
-                                <th>House Salad</th>
-                                <th>Brisket Sandwich and Fries</th>
-                            </tr>                        
-                            <tr>
-                                <td>Really Hits the Spot!<br />
-                                    Plain or Sesame Seed Bun<br />
-                                    Pickle, onion, tomato, and lettuce<br />
-                                    Served with our house-made chips<br />
-                                    $8.95
-                                </td>
-                                <td>On the Lighter Side<br />
-                                    Your choice - with or without cheese<br />
-                                    Iceberg lettuce, tomatoes, peppers<br />
-                                    Thouse Island or Ranch<br />
-                                    Dressing Served with a dinner roll<br />
-                                    $6.95
-                                </td>
-                                <td>A Taste of Texas!<br />
-                                    Smoked Brisket on thick-cut<br />
-                                    Texas Toast<br />
-                                    Cole Slaw<br />
-                                    Served with our famous thick-cut<br />
-                                    french fries<br />
-                                    $7.95
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table id="drinks">
-                        <thead>
-                            <tr>
-                                <th colspan="2">Beverages</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Root Beer</td>
-                                <td>$3.00</td>
-                            </tr>
-                            <tr>
-                                <td>Botted Water</td>
-                                <td>$1.25</td>
-                            </tr>
-                            <tr>
-                                <td>Lemonade</td>
-                                <td>$1.00</td>
-                            </tr>
-                            <tr>
-                                <td>Ice Tea</td>
-                                <td>$1.25</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-            </section>
+            <div class="row no-gutters menu-items">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4>Burder and Fries</h4>
+                    <p>An American Classic!<br />
+                        Your choice - with or without cheese<br />
+                        Pickle, onion, tomato, and lettuce<br />
+                        Served with our famous thick cut<br />
+                        french Fries
+                        <br />
+                        $7.95</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4>Hot Dog and Chips</h4>
+                    <p>A Summer Classic!<br />
+                        Your choice - white or wheat bun<br />
+                        Relish, mustard, and ketchup<br />
+                        Served with our house-made chips<br />
+                        $7.95</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4>Italian Sausage and Peppers</h4>
+                    <p>An All-Time Favorite!<br />
+                        Your choice - mild or spicy Cole Slaw<br />
+                        Served with garlic mashers<br />
+                        $10.95</p>
+                </div>
+            </div>
+            <div class="row no-gutters menu-items">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4>Tenderloin Sandwich and Chips</h4>
+                    <p>Really Hits the Spot!<br />
+                        Plain or Sesame Seed Bun<br />
+                        Pickle, onion, tomato, and lettuce<br />
+                        Served with our house-made chips<br />
+                        $8.95</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4>House Salad</h4>
+                    <p>On the Lighter Side<br />
+                        Your choice - with or without cheese<br />
+                        Iceberg lettuce, tomatoes, peppers<br />
+                        Thouse Island or Ranch<br />
+                        Dressing Served with a dinner roll<br />
+                        $6.95</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h4>Brisket Sandwich and Fries</h4>
+                    <p>A Taste of Texas!<br />
+                        Smoked Brisket on thick-cut<br />
+                        Texas Toast<br />
+                        Cole Slaw<br />
+                        Served with our famous thick-cut<br />
+                        french fries<br />
+                        $7.95</p>
+                </div>
+            </div>
+            <table id="drinks" class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th colspan="2">Beverages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Root Beer</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Botted Water</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td>Lemonade</td>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Ice Tea</td>
+                        <td>$1.25</td>
+                    </tr>
+                </tbody>
+            </table>
             <footer>
                 224 N. Emporia St., Wichita, Kansas 67202
                 <br />
                 316-555-8646
             </footer>
-        </main>
+        </div>
         <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
