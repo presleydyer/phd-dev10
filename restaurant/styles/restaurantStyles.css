@@ -54,6 +54,7 @@ body {
 }
 
 .carousel-inner {
+    background-color: #eee;
     padding-bottom: 5%;
 }
 
